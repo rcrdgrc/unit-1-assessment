@@ -32,5 +32,7 @@ function add() {
 
 function subtract() {
    total -= parseInt(x.value);
-   document.getElementById("total").innerHTML = total;
+   if( total < 0) {document.getElementById("total").innerHTML = "<span style=\"color:red\">" + total + "</span>";}
+   else {document.getElementById("total").innerHTML = total;}
+   
 }
